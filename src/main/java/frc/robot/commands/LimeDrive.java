@@ -81,7 +81,7 @@ public class LimeDrive extends Command {
         double[] targetpose = limelight.getTargetPose();
         double targetX = targetpose[0];
         double targetDist = targetpose[2];
-        double targetAngle = targetpose[4];
+        double targetAngle = limelight.getTargetX();
 
         // Preprocess the driving instructions
         double xRawOutput = driveControllerX.calculate(targetX, goalOffset);

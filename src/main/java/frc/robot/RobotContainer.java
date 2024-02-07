@@ -29,12 +29,12 @@ public class RobotContainer {
     private final XboxController driverController = new XboxController(DRIVER_PORT);
     private final XboxController operatorController = new XboxController(OPERATOR_PORT);
 
-    private final SwerveDrivetrain drivetrain = new SwerveDrivetrain();
-    private final Intake intake = new Intake(INTAKE_DRIVER_ID, INTAKE_ROTATOR_ID, INTAKE_LIMIT_ID);
-    private final Shooter shooter = new Shooter(SHOOTER_RIGHT_ID, SHOOTER_LEFT_ID);
-    private final Limelight shooterLimelight = new Limelight("limelight-pbshoot");
+    public final SwerveDrivetrain drivetrain = new SwerveDrivetrain();
+    public final Intake intake = new Intake(INTAKE_DRIVER_ID, INTAKE_ROTATOR_ID, INTAKE_LIMIT_ID);
+    public final Shooter shooter = new Shooter(SHOOTER_RIGHT_ID, SHOOTER_LEFT_ID);
+    public final Limelight shooterLimelight = new Limelight("limelight-pbshoot");
     
-    private final AutonContainer auton = new AutonContainer();
+    private final AutonContainer auton = new AutonContainer(this);
     private final SendableChooser<Command> autonChooser = new SendableChooser<Command>();    
 
     /** Constructs a RobotContainer */
@@ -47,8 +47,8 @@ public class RobotContainer {
 
     /** Initialize the auton selector on the dashboard */
     private void initChooser() {
+        autonChooser.setDefaultOption("One Piece Auton", auton.onePieceAuton());
         SmartDashboard.putData("Auton Selector", autonChooser);
-        autonChooser.setDefaultOption("Do Nothing", auton.doNothing());
     }
 
 

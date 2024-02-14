@@ -53,39 +53,9 @@ public final class Constants {
         public static final int RR_ENCODER_ID = 51;
     }
 
-    public static final class IntakeIDs {
-        public static final int INTAKE_DRIVER_ID = 10;
-        public static final int INTAKE_ROTATOR_ID = 11;
-        public static final int INTAKE_LIMIT_ID = 0;
-    }
-
-    public static final class  ShooterIDs {
-        public static final int SHOOTER_LEFT_ID = 12;
-        public static final int SHOOTER_RIGHT_ID = 13;
-        
-    }
 
     /* -------------- SUBSYTEM CONSTANTS -------------- */
 
-    public static final class IntakeConstants {
-        public static enum IntakePosition{
-            PICKUP(200), 
-            CLIMB(90),
-            SHOOT(0);
-
-            private double angle;
-
-            IntakePosition(double angle) {
-                this.angle = angle;
-            }
-
-            public double getAngle() {
-                return angle;
-            }
-        }
-
-        public static final double ROTATION_MOTOR_RATIO = .1125;
-    }
 
     /** Turning a module to absolute 0 minus its offset will point it forward */
     public static final class SwerveModuleOffsets {

@@ -21,17 +21,6 @@ public final class Constants {
         public static final int OPERATOR_PORT = 1;
     }
 
-    /** IDs used by the drivetrain.
-        3X for turning, 4X for driving, 5X for abs encoders. */
-        public static final class WestCoastIDs {
-            // Left Motor IDs
-            public static final int LEFT1_ID = 2;
-            public static final int LEFT2_ID = 3;
-            // Right Motor IDs
-            public static final int RIGHT1_ID = 6;
-            public static final int RIGHT2_ID = 7;
-        }
-
     /** IDs used by the swerve drivetrain.
         3X for turning, 4X for driving, 5X for abs encoders. */
     public static final class SwerveIDs {

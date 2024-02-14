@@ -25,21 +25,21 @@ public final class Constants {
         3X for turning, 4X for driving, 5X for abs encoders. */
     public static final class SwerveIDs {
         // Front left module
-        public static final int FL_DRIVE_ID = 42;
-        public static final int FL_TURN_ID = 32;
-        public static final int FL_ENCODER_ID = 52;
+        public static final int FL_DRIVE_ID = 2;
+        public static final int FL_TURN_ID = 1;
+        public static final int FL_ENCODER_ID = 15;
         // Front right module
-        public static final int FR_DRIVE_ID = 40;
-        public static final int FR_TURN_ID = 30;
-        public static final int FR_ENCODER_ID = 50;
+        public static final int FR_DRIVE_ID = 4;
+        public static final int FR_TURN_ID = 3;
+        public static final int FR_ENCODER_ID = 14;
         // Rear left module
-        public static final int RL_DRIVE_ID = 43;
-        public static final int RL_TURN_ID = 33;
-        public static final int RL_ENCODER_ID = 53;
+        public static final int RL_DRIVE_ID = 8;
+        public static final int RL_TURN_ID = 7;
+        public static final int RL_ENCODER_ID = 13;
         // Rear right module
-        public static final int RR_DRIVE_ID = 41;
-        public static final int RR_TURN_ID = 31;
-        public static final int RR_ENCODER_ID = 51;
+        public static final int RR_DRIVE_ID = 6;
+        public static final int RR_TURN_ID = 5;
+        public static final int RR_ENCODER_ID = 16;
     }
 
 

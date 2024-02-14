@@ -72,9 +72,9 @@ public final class Constants {
     /** Constants related to swerve calculations */
     public static final class SwerveConstants {
         /** The distance between the left and right wheels */
-        public static final double TRACK_WIDTH = Units.inchesToMeters(22);
+        public static final double TRACK_WIDTH = Units.inchesToMeters(21);
         /** The distance between the front and rear wheels */
-        public static final double WHEEL_BASE = Units.inchesToMeters(27);
+        public static final double WHEEL_BASE = Units.inchesToMeters(25.5);
 
         /** An array containing the position of each module as a {@link Translation2d} object */
         public static final Translation2d[] MODULE_TRANSLATIONS = {

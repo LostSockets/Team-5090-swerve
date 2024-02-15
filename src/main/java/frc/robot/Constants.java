@@ -48,10 +48,10 @@ public final class Constants {
 
     /** Turning a module to absolute 0 minus its offset will point it forward */
     public static final class SwerveModuleOffsets {
-        public static final double FL_OFFSET = -19.639469;
-        public static final double FR_OFFSET = -140.396912;
-        public static final double RL_OFFSET = 108.830315;
-        public static final double RR_OFFSET = 175.111694;
+        public static final double FL_OFFSET = -103;
+        public static final double FR_OFFSET = 45;
+        public static final double RL_OFFSET = -50;
+        public static final double RR_OFFSET = -65;
     }
 
     /** Whether or not each swerve component should be inverted/reversed */
@@ -92,7 +92,7 @@ public final class Constants {
             new SwerveDriveKinematics(MODULE_TRANSLATIONS);
 
         /** The max speed the robot is allowed to drive in m/sec */
-        public static final double MAX_TRANSLATION_SPEED = 4.5;
+        public static final double MAX_TRANSLATION_SPEED = 1.5;
         /** The max speed the robot is allowed to spin in rads/sec */
         public static final double MAX_ROTATION_SPEED = Math.PI;
         public static final TrapezoidProfile.Constraints THETA_CONTROLLER_CONSTRAINTS =

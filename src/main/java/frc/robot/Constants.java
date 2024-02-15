@@ -48,10 +48,10 @@ public final class Constants {
 
     /** Turning a module to absolute 0 minus its offset will point it forward */
     public static final class SwerveModuleOffsets {
-        public static final double FL_OFFSET = -88.466;
-        public static final double FR_OFFSET = 184.518;
-        public static final double RL_OFFSET = -160.51;
-        public static final double RR_OFFSET = -61.557;
+        public static final double FL_OFFSET = -19.639469;
+        public static final double FR_OFFSET = -140.396912;
+        public static final double RL_OFFSET = 108.830315;
+        public static final double RR_OFFSET = 175.111694;
     }
 
     /** Whether or not each swerve component should be inverted/reversed */
